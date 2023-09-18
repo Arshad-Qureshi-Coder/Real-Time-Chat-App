@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif,'poppins';
+}
+
+body {
+    position: relative;
+    font-family: 'Inter', sans-serif,'poppins';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('BackgroundImg/backgroundimg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.container{
+
+    position: relative;
+    width: 350px;
+    height: 250px;
+    background: transparent;
+    border: 2px solid rgba(228, 185, 185, 0.5);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+}
+
+h1{
+    font-size: 2em;
+    color: #0f576d;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.inputbox{
+    position: relative;
+    width: 300px;
+    margin: 30px 0;
+    border-bottom: 2px solid gray;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #5c4a4a;
+    pointer-events: none;
+    transition: 0.5s;
+    font-weight:bolder ;
+}
+
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    top: -5px;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+.inputbox .icon{
+    position: absolute;
+    right: 8px;
+    color: #5c4a4a;
+    font-size:1.2em ;
+    line-height: 57px;
+}
+
+#join-btn{
+    width: 100%;
+    height: 35px;
+    background: #e6e1e1;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #000;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bolder;
+}
+#join-btn:hover{
+    background-color: rgb(121, 184, 243);
+    color: #5c4a4a;
+}
+
+ .chatroom-container{
+    /* background: #fff; */
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+}
+
+.chatroom-header{
+    background-color: rgb(131, 177, 236);
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.messages{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    border-radius: 5px;
+}
+
+.message {
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 0.3rem;
+    margin: 0.5rem;
+}
+
+.sent {
+    background-color: #5b68dd;
+    color: white;
+    align-self: flex-end;
+}
+.chatroom-container #message-input{
+    position: relative;
+    width: 90%;
+    height: 25px;
+    background: rgb(155, 153, 153);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1em;
+    color: #0a0909;
+    padding: 0 35px 0 5px;
+    margin-left: 10px;
+}
+.msg-div{
+    display: flex;
+}
+.icoN{
+   position: absolute;
+    color: #1a57c7;
+    font-size: 21px;
+    line-height: 15px;
+    right: 3%;
+}
