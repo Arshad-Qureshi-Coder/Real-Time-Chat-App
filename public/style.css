@@ -112,31 +112,19 @@ h1{
     backdrop-filter: blur(5px);
 }
 
-/* .chatroom-header{
-    background-color: rgb(220, 231, 244);
-    padding: 10px;
-    font-size: 20px;
-    color: rgb(15, 13, 13);
-    font-weight: bold;
-} */
-
 .chatroom-header {
     background-color: rgb(220, 231, 244);
-    /* color: #292828; */
-    /* padding: 10px; */
     display: flex;
+    height: 50px;
     justify-content: space-between; /* Horizontal alignment */
     align-items: center; /* Vertical alignment */
   }
 
 .chatroomIcon {
-    border: 1px solid black;
-    
-    /* background-color: #0f576d; */
-    width: 125px;
+    /* border: 1px solid black; */
+    width: 145px;
     font-size: 24px;
-    margin: 0;
-    order: 2;
+    order: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -146,44 +134,48 @@ h1{
 .messages{
     display: flex;
     flex-direction: column;
-    height: 85vh;
+    height: 86vh;
     border-radius: 5px;
 }
 
 .message {
-    background-color: #e1e1e1;
-    border-radius: 5px;
-    width: fit-content;
-    padding: 0.3rem;
-    margin: 0.5rem;
+  max-width: 100%; /* Relative to its parent (message-container) */
+  word-wrap: break-word; /* Allow long words to break and wrap to the next line */
+  background-color: #5b68dd;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .sent {
-    background-color: #5b68dd;
-    color: white;
+    margin: 10px;
+    max-width: 650px;
     align-self: flex-end;
 }
 .chatroom-container #message-input{
     position: relative;
-    width: 90%;
-    height: 25px;
-    background: rgb(155, 153, 153);
+    width: 75%;
+    height: 44px;
+    background: rgb(224, 224, 224);
     border: none;
     outline: none;
     border-radius: 20px;
     font-size: 1em;
     color: #0a0909;
-    padding: 0 35px 0 5px;
-    margin-left: 10px;
+    padding: 0px 26px 0px 20px;
+    margin-left: 153px;
 }
+
 .msg-div{
+    position: relative;
     display: flex;
-    height: 30px;
+    height: 51px;
 }
 .icoN{
-   position: absolute;
-    color: #1a57c7;
-    font-size: 21px;
-    line-height: 15px;
-    right: 3%;
+    position: absolute;
+    color: #4f87ee;
+    font-size: 37px;
+    line-height: 55px;
+    right: 99px;
 }
