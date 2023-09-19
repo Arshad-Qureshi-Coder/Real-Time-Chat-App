@@ -72,7 +72,7 @@ h1{
     border: none;
     outline: none;
     font-size: 1em;
-    color: #fff;
+    color: #656262;
     padding: 0 35px 0 5px;
 }
 
@@ -112,12 +112,36 @@ h1{
     backdrop-filter: blur(5px);
 }
 
-.chatroom-header{
-    background-color: rgb(131, 177, 236);
+/* .chatroom-header{
+    background-color: rgb(220, 231, 244);
     padding: 10px;
-    font-size: 30px;
-    color: white;
+    font-size: 20px;
+    color: rgb(15, 13, 13);
     font-weight: bold;
+} */
+
+.chatroom-header {
+    background-color: rgb(220, 231, 244);
+    /* color: #292828; */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-between; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+  }
+
+.chatroomIcon {
+    border: 1px solid black;
+    
+    /* background-color: #0f576d; */
+    width: 125px;
+    font-size: 24px;
+    margin: 0;
+    order: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.userNameForHeader {
+    margin-left: 12px;
 }
 .messages{
     display: flex;
@@ -154,6 +178,7 @@ h1{
 }
 .msg-div{
     display: flex;
+    height: 30px;
 }
 .icoN{
    position: absolute;

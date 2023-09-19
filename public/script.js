@@ -8,7 +8,9 @@ document.getElementById('join-btn').addEventListener('click',(event)=>{
     if(username.trim()!=""){
         document.querySelector(".form-username").style.display='none';
         document.querySelector(".chatroom-container").style.display='block';
-        document.querySelector('.chatroom-header').innerHTML = `Chatroom - ${username}`;
+        // document.querySelector('.chatroom-header').innerHTML = `Chatroom - ${username}`;
+        document.querySelector('.userNameForHeader').innerHTML = `${username}`;
+        // document.querySelector('.chatroomIcon').innerHTML = ` Chatroom`;
     }
 })
 
